@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,300|Roboto+Condensed:400,700");
+
+
+.cerklwidget .modal-open {
+  overflow: hidden;
+}
+.cerklwidget .modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.cerklwidget .modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.cerklwidget .modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.cerklwidget .modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.cerklwidget .modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.cerklwidget .modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: 0;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.modal-backdrop.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.cerklwidget .modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.cerklwidget .modal-header .close {
+  margin-top: -2px;
+}
+.cerklwidget .modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.cerklwidget .modal-body {
+  position: relative;
+}
+.cerklwidget .modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+.cerklwidget .modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.cerklwidget .modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.cerklwidget .modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.cerklwidget .modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+@media (min-width: 768px) {
+  .cerklwidget .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .cerklwidget .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .cerklwidget .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .cerklwidget .modal-lg {
+    width: 900px;
+  }
+}
+.cerklwidget .clearfix:before,
+.cerklwidget .clearfix:after,
+.cerklwidget .modal-header:before,
+.cerklwidget .modal-header:after,
+.cerklwidget .modal-footer:before,
+.cerklwidget .modal-footer:after {
+  content: " ";
+  display: table;
+}
+.cerklwidget .clearfix:after,
+.cerklwidget .modal-header:after,
+.cerklwidget .modal-footer:after {
+  clear: both;
+}
+.cerklwidget .center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cerklwidget .pull-right {
+  float: right !important;
+}
+.cerklwidget .pull-left {
+  float: left !important;
+}
+.cerklwidget .hide {
+  display: none !important;
+}
+.cerklwidget .show {
+  display: block !important;
+}
+.cerklwidget .invisible {
+  visibility: hidden;
+}
+.cerklwidget .text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.cerklwidget .hidden {
+  display: none !important;
+}
+.cerklwidget .affix {
+  position: fixed;
+}
+
+.cerkwidget button, .cerkwidget input {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.cerklwidget .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  border-color: #ccc;
+}
+.cerklwidget .btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.cerklwidget .btn-outline-rounded {
+  border-radius: 25px;
+  font-size: 16px;
+}
+.cerklwidget .btn-info.active, .btn-info.focus, .btn-info:active, .btn-info:focus, .btn-info:hover, .open>.dropdown-toggle.btn-info {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.cerklwidget .btn-outline-rounded {
+  padding: 12px 20px;
+}
+.cerklwidget img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.cerklwidget.well, .cerklwidget .well {
+  padding: 0px;
+  min-height: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+.cerklwidget table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 13px;
+}
+.cerklwidget .form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.cerklwidget .form-control {
+  margin-bottom: 20px;
+  border-radius: 10px!important;
+}
+.cerklwidget input.form-control, .cerklwidget select.form-control, .cerklwidget textarea.form-control {
+  background: #fbfbfb;
+  border: 2px solid #d5d5d5;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+  color: #646464;
+  min-height: 44px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.428571429;
+  padding: 6px 12px;
+  width: 100%!important;
+}
+.cerklwidget .alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.cerklwidget .alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.cerklwidget .alert {
+  padding: 15px;
+  margin-bottom: 18px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  line-height: 1.5em;
+  font-size: 20;
+  width:100%;
+  position:absolute;
+  z-index: 100;
+}
+.cerklwidget .text-center {
+  text-align: center;
+}
+.cerklwidget[light="true"] .btn {
+  background-color:#FFFFFF;
+  color:#646464;
+}
+.cerklwidget a{
+  color: #39bfc9;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+}
+.cerklwidget .profile{
+  width: 100%;
+  max-width: 200px;
+  min-width: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  border: 2px solid rgba(255,255,255,.9);
+  border-radius: 6px;
+}
+.cerklwidget h1{
+  margin: 0 0 15px;
+  font-weight: 700;
+  text-rendering: optimizelegibility;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: none;
+}
+.cerklwidget label{
+  padding-top: 7px;
+  margin-bottom: 0;
+  text-align: right;
+  font-weight: 600!important;
+}
+.cerklwidget .col-sm-9 {
+  width: 75%;
+}
+.cerklwidget .col-sm-3 {
+  width: 25%;
+}
+.cerklwidget .col-sm-offset-10.col-sm-2 {
+  width: 16.66666667%;
+  margin-left: 83.33333333%;
+}
+.cerklwidget .col-sm-3, .cerklwidget .col-sm-9, .cerklwidget .col-sm-offset-2.col-sm-10{
+
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.cerklwidget * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333;
+  font: 16px/24px roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased!important;
+  font-family: sans-serif;
+}
+.cerklwidget :after, .cerklwidget :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+  clear: both;
+}
+.cerklwidget :after {
+  content: " ";
+}
+.cerklwidget .fade.in {
+  opacity: 1;
+}
+.cerklwidget .alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.cerklwidget .alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.cerklwidget .fade {
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  -o-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+.cerklwidget .modal-body>* {
+  overflow:hidden;
+  margin: 2%;
+  width: 96%;
+}
+.cerklwidget .form-group label {
+  text-align: center;
+}
+.cerklwidget .form-group button {
+  float: right;
+}
+.cerklwidget .alert:first-letter {
+  text-transform: uppercase;
+}
+.cerklwidget .well>* {
+  padding:15px;
+}
+.cerklwidget .btn-default {
+  background-color: #FFFFFF;
+}
+.cerklwidget .well>.alert, .cerklwidget.well>.alert{
+  margin: 9% 2% 2%;
+  width:96%;
+}
+.cerklwidget .modal-body .message_row {
+  margin-left:0px;
+}
